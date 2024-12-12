@@ -1,6 +1,3 @@
-
-
-
 document.getElementById("btn").addEventListener("click",getWeather);
 document.getElementById("input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
@@ -31,7 +28,7 @@ async function getWeather(){
         info.innerHTML = `
         <h2>${data.resolvedAddress}</h2>
         <p>Temperature: ${data.currentConditions.temp}°C</p>
-        <p>Conndition: ${data.currentConditions.conditions} </p>
+        <p>Condition: ${data.currentConditions.conditions} </p>
         <p><img src="https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/PNG/1st%20Set%20-%20Color/${data.currentConditions.icon}.png" alt="${data.currentConditions.icon}"</p>
         <p>Humidity: ${data.currentConditions.humidity}%</p>
         <p>Wind Speed: ${data.currentConditions.windspeed} k/h</p>
