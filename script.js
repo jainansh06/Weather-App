@@ -31,7 +31,8 @@ async function getWeather(){
         info.innerHTML = `
         <h2>${data.resolvedAddress}</h2>
         <p>Temperature: ${data.currentConditions.temp}°C</p>
-        <p>Conndition: ${data.currentConditions.conditions}</p>
+        <p>Conndition: ${data.currentConditions.conditions} </p>
+        <p><img src="https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/PNG/1st%20Set%20-%20Color/${data.currentConditions.icon}.png" alt="${data.currentConditions.icon}"</p>
         <p>Humidity: ${data.currentConditions.humidity}%</p>
         <p>Wind Speed: ${data.currentConditions.windspeed} k/h</p>
         `;
